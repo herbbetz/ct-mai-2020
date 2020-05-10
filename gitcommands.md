@@ -9,14 +9,14 @@ im GIT Bash Terminal unter Windows (als Admin)
   git add README.md \  
   git commit -m "first commit" \  
   git remote add origin https://github.com/herbbetz/herbsown16_11_13.git \  
-  git push -u origin master
+  git push -u origin master \
 ------------------------------------------------
 + ...or push an existing repository from the command line
 
   git remote add origin https://github.com/herbbetz/herbsown16_11_13.git \
-  git push -u origin master
+  git push -u origin master \
 ------------------------------------------------
 + ...or import code \
-e.g. https://github.com/herbbetz/herbsown16_11_13/import
+  e.g. https://github.com/herbbetz/herbsown16_11_13/import
 
-Das Plus re.oben in WebIF importiert ein anderes .git in ein neues Repository.
+  Das Plus re.oben in WebIF importiert ein anderes .git in ein neues Repository.
