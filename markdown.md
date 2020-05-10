@@ -18,5 +18,6 @@ end of line \
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). \
-https://markdown.de/
+For more details see 
++ [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) 
++ [Markdown.de](https://markdown.de/)
