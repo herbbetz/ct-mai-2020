@@ -16,6 +16,7 @@ im GIT Bash Terminal unter Windows (als Admin)
 
   git remote add origin https://github.com/herbbetz/herbsown16_11_13.git 
   git push -u origin master 
+
 ------------------------------------------------
 + ...or import code 
   e.g. https://github.com/herbbetz/herbsown16_11_13/import
