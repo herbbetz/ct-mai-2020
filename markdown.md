@@ -1,7 +1,7 @@
 ```markdown
 Syntax highlighted code block
 
-end of line \
+end of line \ (jedoch nicht unter Github/Jekyll)
 
 # Header 1
 ## Header 2
