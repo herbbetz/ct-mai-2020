@@ -1,6 +1,3 @@
-siehe auch: \
-pages.github.com
-
 ## github-pages-example
 Ein einfaches Beispiel zur Illustration von GitHub Pages \
 nach ct.de/y2u3 (ct 162-11-2020): \
@@ -19,6 +16,9 @@ https://github.com/ct-Open-Source/github-pages-example.git
 + Delete File -> TrashIcon - Commit changes (Achtung: wenn einziges File, wird auch der Ordner entfernt)
 
 ## Welcome to GitHub Pages
+siehe auch: \
+https://pages.github.com \
+https://guides.github.com/introduction/git-handbook/
 
 You can use the [editor on GitHub](https://github.com/herbbetz/2020gitPage/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
