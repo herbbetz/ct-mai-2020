@@ -1,10 +1,16 @@
 <div class="nav">
     <h1>{{ page.title | default: site.title }}</h1>
-    PageURL: {{page.url}}
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}    
+<!--    PageURL: {{page.url}}
     <a href="index.html">Web IF</a>
     <a href="image.html">Beispiele</a>
     <a href="gitcommands.html">GIT cmd</a>
     <a href="jekyll.html">Jekyll</a>
     <a href="markdown.html">Markdown</a>
     <a href="about.html">Über</a>
+-->
 </div>
