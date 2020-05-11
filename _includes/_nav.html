@@ -1,6 +1,6 @@
 <div class="nav">
     <h1>{{ page.title | default: site.title }}</h1>
-  {% for item in site.data.navigation %}
+  {% for item in site.data.nav %} <!-- _data/nav.yml -->
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
     </a>
