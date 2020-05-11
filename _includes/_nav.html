@@ -1,8 +1,7 @@
 <div class="nav">
     <h1>{{ page.title | default: site.title }}</h1>
     
-<!-- Verwendung von _data/nav.yml problematisch, da in site.data.nav der Repository-Name fuer funktionierenden Link 
-extra eingefuegt werden muss, und dann mit page.url nicht mehr übereinstimmt...-->
+<!-- Achtung: Repository-Name muss extra eingefügt werden... -->
   {% for item in site.data.nav %} 
     PageURL: {{page.url}}, ItemLink: {{item.link}}
     <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
