@@ -5,7 +5,7 @@ title: Jekyll
 
 Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 
-+ Empfehlung: am Dateianfang immer FrontMatter (2 Zeilen mit ---), sonst keine Verarbeitung von Liquid Template Variablen
++ Empfehlung: am MD-Dateianfang immer FrontMatter (2 Zeilen mit ---), sonst keine Verarbeitung von Liquid Template Variablen
 
 + Troubleshoot: 
   z.B. steht im FrontMatter statt `title: Markdown` nur `Markdown`, dann in Settings `website compile problems`   
