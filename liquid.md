@@ -3,4 +3,4 @@ layout: default
 title: Liquid template
 ---
 
-[Liquid Docs] (https://shopify.github.io/liquid/filters/append/)
+[Liquid Docs](https://shopify.github.io/liquid/filters/append/)
