@@ -19,7 +19,23 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   z.B. steht im FrontMatter statt `title: Markdown` nur `Markdown`, dann in Settings `website compile problems`   
   siehe [Troubleshoot Guide](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#troubleshooting-build-errors)
   
-+ der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. Der Repository-Name muss per Liquid in _include/nav.html extra angehängt werden...
++ der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. Der Repository-Name muss per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
+```
+ {% for item in site.data.nav %} 
+    <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+```
+---------------
+```
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{"/ct-mai-2020" |append: post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+```
   
 
 
