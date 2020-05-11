@@ -2,15 +2,15 @@
     <h1>{{ page.title | default: site.title }}</h1>
     
 <!-- Verwendung von _data/nav.yml problematisch, da in site.data.nav der Repository-Name fuer funktionierenden Link 
-extra eingefuegt werden muss, und dann mit page.url nicht mehr übereinstimmt...
+extra eingefuegt werden muss, und dann mit page.url nicht mehr übereinstimmt...-->
   {% for item in site.data.nav %} 
     PageURL: {{page.url}}, ItemLink: {{item.link}}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+    <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
---> 
-    
+
+<!--    
     <a href="index.html">Web IF</a>
     <a href="image.html">Beispiele</a>
     <a href="gitcommands.html">GIT cmd</a>
@@ -19,5 +19,5 @@ extra eingefuegt werden muss, und dann mit page.url nicht mehr übereinstimmt...
     <a href="sass.html">Sass</a>
     <a href="markdown.html">Markdown</a>
     <a href="about.html">Über</a>
-
+-->
 </div>
