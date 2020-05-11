@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Web-IF
 ---
 ## Website-Gestaltung im Webinterface
 
