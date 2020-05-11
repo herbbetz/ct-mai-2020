@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Jekyll
 ---
 [Jekyll Doku](https://jekyllrb.com/docs/)
@@ -20,6 +21,7 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   siehe [Troubleshoot Guide](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#troubleshooting-build-errors)
   
 + der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. Der Repository-Name muss per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
+
 ```
  {% for item in site.data.nav %} 
     <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
@@ -27,7 +29,9 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
     </a>
   {% endfor %}
 ```
+
 ---------------
+
 ```
   {% for post in site.posts %}
     <li>
@@ -36,6 +40,3 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
     </li>
   {% endfor %}
 ```
-  
-
-
