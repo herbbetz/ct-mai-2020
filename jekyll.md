@@ -5,7 +5,7 @@ title: Jekyll
 
 Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 
-+ Empfehlung: am MD-Dateianfang immer FrontMatter (2 Zeilen mit ---), sonst keine Verarbeitung von Liquid Template Variablen  
++ Empfehlung: am MD-Dateianfang immer FrontMatter (2 Zeilen mit ---), sonst keine Verarbeitung von Liquid Template Variablen 
   am besten, nach Erstellung von `_layouts/default.html`:
   ```
   ---
@@ -13,6 +13,7 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   title: Wasauchimmer
   ---
   ```
++ Auch SCSS-Dateien brauchen ein leeres solches FrontMatter am Anfang.
 
 + Troubleshoot: 
   z.B. steht im FrontMatter statt `title: Markdown` nur `Markdown`, dann in Settings `website compile problems`   
