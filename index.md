@@ -9,3 +9,7 @@ title: Web-IF
 + Die index.html ist sowieso nirgends sichtbar und wird wohl dynamisch erzeugt? Es sollten aber doch statische Websites sein? Download mit WGET?
 
 + Das Hochladen von Dateien in Ordnern ist in der Github-Weboberfläche sehr umständlich: New File - Ordnername/d.txt, dann Datei dorthin hochladen, denn d.txt mit TrashIcon und Commit deleten... Nur mit GIT-Commandline praktikabel...
+
++ Troubleshoot: 
+  z.B. steht statt `title: Markdown` nur `Markdown`, dann in Settings `website compile problems`
+  siehe [Troubleshoot Guide](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#troubleshooting-build-errors)
