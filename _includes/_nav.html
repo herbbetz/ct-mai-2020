@@ -1,11 +1,12 @@
 <div class="nav">
     <h1>{{ page.title | default: site.title }}</h1>
+    PageURL: {{page.url}}, ItemLink: {{item.link}}</hr> 
   {% for item in site.data.nav %} <!-- _data/nav.yml -->
     <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}    
-<!--    PageURL: {{page.url}}
+<!--    
     <a href="index.html">Web IF</a>
     <a href="image.html">Beispiele</a>
     <a href="gitcommands.html">GIT cmd</a>
