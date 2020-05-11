@@ -1,5 +1,8 @@
+---
+Markdown
+---
 ```markdown
-Syntax highlighted code block
+Syntax highlighted code block: zu Anfang und Ende 3 inverse Hochkommas
 
 end of line \ (jedoch nicht unter Github/Jekyll)
 
