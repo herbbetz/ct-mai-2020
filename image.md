@@ -1,5 +1,5 @@
 ---
-title: Ein Beispiel mit Bild
+title: Gitpage examples
 ---
 
 ### Der Blick aus dem Fenster 
