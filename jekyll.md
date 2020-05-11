@@ -26,7 +26,7 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 
 ```
  {% for item in site.data.nav %} 
-    <a href="{{ "/ct-mai-2020" |append: item.link }}" \{% if page.url == item.link %}class="current"{% endif %}>
+    <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
@@ -35,12 +35,12 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 ---------------
 
 ```
-  % for post in site.posts %}
+  {% for post in site.posts %}
     <li>
       <h2><a href="{{"/ct-mai-2020" |append: post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
-  % endfor %}
+  {% endfor %}
 ```
 
 {% endcomment %}
