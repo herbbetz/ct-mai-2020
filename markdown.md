@@ -5,6 +5,7 @@ title: Markdown
 Syntax highlighted code block: zu Anfang und Ende 3 inverse Hochkommas
 
 end of line \ (jedoch nicht unter Github/Jekyll)
+oder am Zeilenende 2 Spaces
 
 # Header 1
 ## Header 2
