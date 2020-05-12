@@ -45,4 +45,4 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 
 {% endraw %}
 
-+ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende `{% raw %}{% endraw %}`. 
++ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende in `{%` die commands raw bzw. endraw. 
