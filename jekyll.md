@@ -14,13 +14,26 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   title: Wasauchimmer
   ---
   ```
-+ Auch SCSS-Dateien brauchen ein leeres solches FrontMatter am Anfang.
++ Auch SCSS-Dateien brauchen ein leeres solches FrontMatter am Anfang zwecks Preprocessing.
 
 + Troubleshoot: 
   z.B. steht im FrontMatter statt `title: Markdown` nur `Markdown`, dann in Settings `website compile problems`   
   siehe [Troubleshoot Guide](https://help.github.com/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#troubleshooting-build-errors)
   
-+ der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. Der Repository-Name muss per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
++ der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. 
+
+In `config.yml` kann man das anpassen:
+```
+baseurl: "/repository-name"
+url: "https://username.github.io"
+
+or
+
+baseurl: ""
+url: "https://username.github.io/repository-name"
+```
+
+Etwas umständlicher kann alternativ der Repository-Name per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
 
 {% raw %}
 
@@ -45,4 +58,4 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 
 {% endraw %}
 
-+ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende in `{%` die commands raw bzw. endraw. 
++ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende in {% raw %}`{%...%}`{% endraw %} die commands `raw` bzw. `endraw`. 
