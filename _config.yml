@@ -1,5 +1,4 @@
-baseurl: "https://herbbetz.github.io/ct-mai-2020"
-url: "https://herbbetz.github.io/ct-mai-2020"
+baseurl: "/ct-mai-2020"
 
 title: Herbs GitHub Page 
 sass:
