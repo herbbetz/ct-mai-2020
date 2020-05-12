@@ -25,21 +25,15 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
 In `config.yml` kann man das anpassen (https://jekyllrb.com/docs/configuration/):
 ```
 baseurl: "/repository-name"
-url: "https://username.github.io"
-
-or
-
-baseurl: ""
-url: "https://username.github.io/repository-name"
 ```
 
-Etwas umständlicher kann alternativ der Repository-Name per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
+... was aber nur Effekt hat, wenn der Repository-Name per Liquid in _include/nav.html oder /blogs.html extra angehängt wird:
 
 {% raw %}
 
 ```
  {% for item in site.data.nav %} 
-    <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+    <a href="{{ site.baseurl |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
