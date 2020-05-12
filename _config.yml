@@ -1,7 +1,7 @@
 baseurl: ""
 url: "https://herbbetz.github.io/ct-mai-2020"
 
-title: GitHub Pages Beispiel 
+title: Herbs GitHub Page 
 sass:
         sass_dir: _sass
         style: compressed
