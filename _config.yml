@@ -1,3 +1,6 @@
+baseurl: "/ct-mai-2020"
+url: "https://herbbetz.github.io"
+
 title: GitHub Pages Beispiel 
 sass:
         sass_dir: _sass
