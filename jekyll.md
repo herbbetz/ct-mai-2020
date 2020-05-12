@@ -22,7 +22,7 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   
 + der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. 
 
-In `config.yml` kann man das anpassen:
+In `config.yml` kann man das anpassen (https://jekyllrb.com/docs/configuration/):
 ```
 baseurl: "/repository-name"
 url: "https://username.github.io"
