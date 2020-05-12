@@ -3,7 +3,7 @@
     
 <!-- Achtung: Repository-Name muss extra eingefügt werden... -->
   {% for item in site.data.nav %} 
-    <a href="{{ "/ct-mai-2020" |append: item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
