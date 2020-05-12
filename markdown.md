@@ -22,6 +22,8 @@ oder am Zeilenende 2 Spaces
 [Link](url) and ![Image](src)
 ```
 
+Jekyll verwendet den Markdown Renderer [Kramdown](https://jekyllrb.com/docs/configuration/markdown/)
+
 For more details see 
 + [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/) 
 + [Markdown.de](https://markdown.de/)
