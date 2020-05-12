@@ -1,6 +1,10 @@
-baseurl: "./ct-mai-2020"
+baseurl: "/ct-mai-2020"
 
 title: Herbs GitHub Page 
 sass:
         sass_dir: _sass
         style: compressed
+        
+webrick: #https://derekdick.github.io/2018/08/31/jekyll-page-cache-control.html
+  headers:
+    Cache-Control: no-cache
