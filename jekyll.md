@@ -27,7 +27,7 @@ In `config.yml` kann man das anpassen (https://jekyllrb.com/docs/configuration/)
 baseurl: "/repository-name"
 ```
 
-... was aber nur Effekt hat, wenn der Repository-Name per Liquid in _include/nav.html oder /blogs.html extra angehängt wird:
+... was aber nur Effekt hat, wenn der Repository-Name per Liquid in _includes/_nav.html oder /blogs.html extra angehängt wird:
 
 {% raw %}
 
