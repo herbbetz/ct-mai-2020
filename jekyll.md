@@ -22,7 +22,7 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   
 + der Pfad / oder /about.html in _data/nav.yml bezieht sich leider auf https://herbbetz.github.io und nicht auf https://herbbetz.github.io/ct-mai-2020/. Der Repository-Name muss per Liquid in _include/nav.html oder /blogs.html extra angehängt werden:
 
-{% comment %}
+{% raw %}
 
 ```
  {% for item in site.data.nav %} 
@@ -43,6 +43,6 @@ Jekyll ist ein Ruby Programm und baut die Website, auch auf Github.
   {% endfor %}
 ```
 
-{% endcomment %}
+{% endraw %}
 
-+ Leider kann man in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Auch `<pre><code>` hilft nicht, am ehesten hilft Liquids `{% comment %}{% endcomment %}`. 
++ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende `{% raw %}{% endraw %}`. 
