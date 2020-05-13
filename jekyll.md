@@ -52,4 +52,6 @@ baseurl: "/repository-name"
 
 {% endraw %}
 
-+ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende in {% raw %}`{%...%}`{% endraw %} die commands `raw` bzw. `endraw`. 
++ Man kann in einem Markdown-Codeblock (3 Hochkommas) kein Liquid-Template-Code darstellen, ohne dass er ausgeführt wird. Verwende in {% raw %}`{%...%}`{% endraw %} die commands `raw` bzw. `endraw`.
+
++ Plugins (.rb) sind nur im lokalen Jekyll zugelassen, also nicht auf Github mit diesen Ausnahmen: https://pages.github.com/versions/
