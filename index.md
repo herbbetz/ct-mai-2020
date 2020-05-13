@@ -4,7 +4,7 @@ title: Web-IF
 ---
 ## Website-Gestaltung im Webinterface
 
-+ Nur der master branch steht für Website zur Auswahl in settings. 
++ Als source für die Website stehen unter settings-GithubPages-source nur master oder ein zuvor angelegter Ordner master/docs oder ein angelegter Branch mit dem expliziten Namen "gh-pages" zur Auswahl, aber nicht etwa irgendein beliebig benannter Branch. 
 
 + Die index.html ist sowieso nirgends sichtbar und wird wohl dynamisch erzeugt? Es sollten aber doch statische Websites sein? Download mit WGET?
 
