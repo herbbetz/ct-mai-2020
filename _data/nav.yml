@@ -16,5 +16,5 @@
   link: /markdown.html
 - name: About
   link: /about.html
--name:test
-link:/test.html
+- name: test
+  link: /test.html
