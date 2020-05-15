@@ -1,0 +1,26 @@
+---
+layout: default
+title: blogfeed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<!-- http://jmcglone.com/guides/github-pages/  -->
+	<h1>Blogfeed</h1>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.baseurl }}</id>
+	<author>
+		<name>{{ page.author }}</name>
+		<email>herber7be7z@gmail.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="{{ site.baseurl| append: post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>{{ site.baseurl| append: post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
