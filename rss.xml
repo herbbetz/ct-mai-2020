@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Github BlogRSS</title>
+		<link>{{ site.url| append: "/rss.xml" }}</link>
+		<description>Blog von https://github.com/herbbetz/ct-mai-2020</description>
+		
+	{% for post in site.posts %}
+		<item>
+			<title>{{ post.title }}</title>
+			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<link>{{ site.url| append: post.url }}</link>
+		</item>
+	{% endfor %}
+		
+
+	</channel>
+</rss>
