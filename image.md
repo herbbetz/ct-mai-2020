@@ -5,7 +5,7 @@ title: Gitpage examples
 
 ### Der Blick aus dem Fenster 
 
-![Dies ist ein Beispielbild.](assets/images/example.jpg)
+![Dies ist ein Beispielbild.](assets/images/dogshield.jpg)
 
 Beispielbild in assets/images
 
