@@ -2,8 +2,8 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-<!-- http://jmcglone.com/guides/github-pages/  -->
-	<title>Blogfeed</title>
+<!-- https://www.data2type.de/xml-xslt-xslfo/newsfeeds-rss-atom/atom/aufbau-atom-feed/weitere-metadaten/  -->
+	<title>Herbs AtomBlogFeed</title>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>{{ site.url }}</id>
 	<author>
@@ -11,6 +11,7 @@
 		<email>herber7be7z@gmail.com</email>
 	</author>
 	<link href="{{ site.url| append: "/atom.xml" }}" rel="self"/>
+	<logo>{{ site.url |append: "/assets/logo/Herb0909_s.jpg"}}</logo>
 
 	{% for post in site.posts %}
 		<entry>
