@@ -1,21 +1,25 @@
-<?xml version="1.0"?>
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-   <title>Webtrends</title>
-   <author>
-      <name>Roswitha Celawi</name>
-   </author>
-   <updated>2005–04–15T08:15:48.428Z</updated>
-   <link rel="alternate" href="http://www.celawi.com/webtrends.html"/>
-   <entry>
-      <title>Ask Jeeves jetzt auch in Spanien</title>
-      <summary>Ask Jeeves startete am 5. April mit der Betaversion eines neuen Such-Service für Spanien. Es ist der erste von mehreren geplanten Starts in Europa dieses Jahr.</summary>
-      <updated>2005–04–15T08:15:48.428Z</updated>
-      <id>http://www.celawi.com/webtrends/20040415_01.html </id>
-   </entry>
-   <entry>
-      <title>Bitkom-Studie: Paid Content in Deutschland erfolgreich</title>
-      <summary>Kostenpflichtige Online-Inhalte werden immer besser angenommen: "Die Zeit der Kostenlos-Kultur geht zu Ende, gleichzeitig steigt die Qualität der Angebote", sagt Bernhard Rohleder, Hauptgeschäftsführer von Bitkom.</summary>
-      <updated>2005–04–15T08:15:48.428Z</updated>
-      <id>http://www.celawi.com/webtrends/20040415_02.html </id> 
-   </entry>
-</feed> 
+<!-- http://jmcglone.com/guides/github-pages/  -->
+	<title>Blogfeed</title>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.baseurl }}</id>
+	<author>
+		<name>{{ page.author }}</name>
+		<email>herber7be7z@gmail.com</email>
+	</author>
+	<link href="{{ site.baseurl| append: "atom.xml" }}" rel="self"/>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="{{ site.baseurl| append: post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>{{ site.baseurl| append: post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
