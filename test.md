@@ -1,5 +1,5 @@
 ---
-layout:default
-title:test
+layout: default
+title: test
 ---
 Dies ist ein Test
