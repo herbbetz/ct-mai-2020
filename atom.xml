@@ -11,8 +11,8 @@
 		<email>herber7be7z@gmail.com</email>
 	</author>
 	<link href="{{ site.url| append: "/atom.xml" }}" rel="self"/>
-	<icon>{{ site.url |append: "/assets/images/Herb0909_s.jpg"}}</icon>
-	<logo>{{ site.url |append: "/assets/images/Herb0909_s.jpg"}}</logo>
+	<icon>{{ site.url |append: "/assets/images/Herb0909_s.png"}}</icon>
+	<logo>{{ site.url |append: "/assets/images/Herb0909_s.png"}}</logo>
 
 	{% for post in site.posts %}
 		<entry>
