@@ -7,7 +7,7 @@
 		<link>{{ site.url| append: "/rss.xml" }}</link>
 		<description>Blog von https://github.com/herbbetz/ct-mai-2020</description>
 		<image>
-			<url>{{ site.url| append: "/assets/images/Herb0909_s.png" }}</url>
+			<url>{{ site.url| append: "/assets/images/Herb0909_s.jpg" }}</url>
 			<width>25</width>
 			<height>30</height>
 		</image>
