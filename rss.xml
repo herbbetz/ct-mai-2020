@@ -1,8 +1,9 @@
 ---
 ---
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<!-- https://validator.w3.org/feed/docs/rss2.html -->	
+<!-- https://validator.w3.org/feed/docs/rss2.html -->
+<!-- https://gist.github.com/roachhd/f664d2cae2da899be3f6 -->	
 	<channel>
 		<title>Github BlogRSS</title>
 		<link>{{ site.url| append: "/rss.xml" }}</link>
@@ -17,8 +18,9 @@
 		<item>
 			<title>{{ post.title }}</title>
 			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-			<description>post.desc or page.desc not working here, nor Umlauts: ü, &#252;</description> 
-			<link>{{ site.url| append: post.url }}</link>
+			<description>{{ post.content | xml_escape }}</description>
+			<!-- not working in <description>: post.desc or page.desc -->
+			<link>{{ site.url}}{{post.url }}</link>
 		</item>
 	{% endfor %}
 		
