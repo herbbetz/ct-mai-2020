@@ -16,6 +16,7 @@
 		<item>
 			<title>{{ post.title }}</title>
 			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<description>müsste im FrontMatter angelegt werden, z.B. als post.desc</description> 
 			<link>{{ site.url| append: post.url }}</link>
 		</item>
 	{% endfor %}
