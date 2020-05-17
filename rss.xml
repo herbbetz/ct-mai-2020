@@ -16,7 +16,7 @@
 		<item>
 			<title>{{ post.title }}</title>
 			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-			<description>post.desc oder page.desc funktioniert hier nicht, Umlaute als &uuml; nicht ü</description> 
+			<description>post.desc oder page.desc funktioniert hier nicht, Umlaute als ... nicht ü</description> 
 			<link>{{ site.url| append: post.url }}</link>
 		</item>
 	{% endfor %}
