@@ -2,6 +2,7 @@
 ---
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<!-- https://validator.w3.org/feed/docs/rss2.html -->	
 	<channel>
 		<title>Github BlogRSS</title>
 		<link>{{ site.url| append: "/rss.xml" }}</link>
